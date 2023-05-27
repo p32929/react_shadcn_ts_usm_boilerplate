@@ -1,14 +1,7 @@
-const { fontFamily } = require("tailwindcss/defaultTheme")
-
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   darkMode: ["class"],
-  content: [
-    // "app/**/*.{ts,tsx}",
-    // "components/**/*.{ts,tsx}"
-    "./index.html",
-    "./**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
       center: true,
@@ -58,9 +51,6 @@ module.exports = {
         md: `calc(var(--radius) - 2px)`,
         sm: "calc(var(--radius) - 4px)",
       },
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
-      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
@@ -78,4 +68,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

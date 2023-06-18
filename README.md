@@ -1,3 +1,5 @@
+# Shadcn + TypeScript + USM
+
 add all shadcn ui components:
 
 ```
@@ -5,3 +7,6 @@ yarn shadcn-ui add accordion alert alert-dialog aspect-ratio avatar badge button
 
 yarn add  @tanstack/react-table
 ```
+
+### ...
+I'll update the readme later :)
